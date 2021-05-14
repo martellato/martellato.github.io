@@ -1,0 +1,23 @@
+@import ../variables
+@import ../mixins
+
+.welcome
+  display: block
+  //border : 3px solid $cBlue
+  //flex-direction: column
+  width : 60vw
+  margin: 25px 20vw
+  border-radius: 20px
+  justify-content: center
+  //min-height: calc(100vh - 20rem)
+  //backdrop-filter: blur(3px)
+  p
+    margin: 5px
+    font-family: $mFont
+    font-size: 20px
+    @include glowText($cForeground)
+
+
+#line17
+  width : 90px
+  @include animateType($cBlue,90px)

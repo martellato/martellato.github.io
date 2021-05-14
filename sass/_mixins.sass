@@ -1,0 +1,60 @@
+@mixin glowText($color)
+  color : $color
+  text-shadow : currentColor 0 0 0.5em
+  position : relative
+  padding-left : 0.5em
+  padding-right : 0.5em
+@mixin glowShadow($color)
+  &::before
+    content : ''
+    pointer-events : none
+    position : absolute
+    top : 100%
+    left : 0
+    height : 100%
+    width : 100%
+    background : currentColor
+    transform : perspective(1em) rotateX(40deg) scale(1,0.35)
+    filter : blur(1em)
+    opacity : 0.5
+
+@mixin glowHover($color)
+  &:hover
+    transition : text-shadow 200ms linear
+    color : $color
+    text-shadow : currentColor 0 0 0.7em
+@mixin glowHoverShadow($color)
+  &::after
+    content : ''
+    position : absolute
+    top : 100%
+    left : 0
+    height : 100%
+    width : 100%
+    background : currentColor
+    transform : perspective(1em) rotateX(40deg) scale(1,0.35)
+    filter : blur(1em)
+    opacity : 0
+    transition : opacity 100ms linear
+  &:hover::after
+    opacity : 1
+
+@mixin animateType($cursorColor, $cLen)
+  overflow : hidden
+  border-right: 0.15rem solid $cursorColor
+  white-space: nowrap
+  letter-spacing: 0.15rem
+  //margin: 0 auto
+  animation: blinkCaret 1s steps(50,end) infinite
+  //animation-fill-mode: forwards
+
+  @keyframes blinkCaret
+    from, to
+      border-color: transparent
+    50%
+      border-color: $cursorColor
+    //to
+    //  width : $cLen
+    //  border-color: $cursorColor
+
+

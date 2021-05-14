@@ -1,0 +1,315 @@
+@import ../mixins
+@import ../variables
+
+$cPole : $cYellow
+$poleHeight : 40rem
+$marginLeft : 0.92rem
+.bgPole
+  display : flex
+  flex-direction : column
+  margin : 0 auto
+  padding : 2rem
+  justify-content : center
+  align-items : center
+  align-content : center
+  justify-items : center
+  width : 3rem
+  position : relative
+
+#bgRobot
+  position : absolute
+  top : 2.3rem
+  width : 2.5rem
+  height : 2.5rem
+  padding-bottom : 0.5rem
+  color : $cBackground
+  margin-left : $marginLeft
+
+#poleHead
+  width : 1rem
+  height : 1rem
+  background-color : $cPole
+  border : 1rem solid $cPole
+  border-radius : 1rem
+  margin-left : $marginLeft
+
+#poleBody
+  height : $poleHeight
+  width : 1rem
+  //background-color : $cPole
+  border : 1px transparent $cPole
+  background : linear-gradient(to bottom, $cYellow, $cBackground)
+  margin-left : $marginLeft
+
+#poleEnd
+  width : 1rem
+  height : 1rem
+  background-color : $cBackground
+  border : 1rem solid $cBackground
+  border-radius : 1rem
+  margin-left : $marginLeft
+
+#bgAtom
+  position : absolute
+  bottom : 2rem
+  width : 2.5rem
+  height : 2.5rem
+  padding-bottom : 0.5rem
+  color: $cPole
+  margin-left : $marginLeft
+
+a
+  text-decoration : none
+  color : $cForeground
+
+#yourlogo
+  @include glowText($cForeground)
+  svg
+    width : 50px
+    height : 50px
+    padding-left : 10px
+    color : $cForeground
+  position : absolute
+  top : 28rem
+  padding : 0
+  height : 100px
+  display : flex
+  align-items : center
+  justify-content : center
+  margin : 0
+  left : calc(50% + 1rem)
+  font-size : 40px
+#uwaterlooRA
+  svg
+    width : 50px
+    height : 50px
+    padding-left : 10px
+    color : $cForeground
+  @include glowText($cForeground)
+  padding : 0
+  height : 100px
+  display : flex
+  align-items : center
+  justify-content : center
+  margin : 0
+  left : calc(50% + 1rem)
+  position : absolute
+  top : 36rem
+  font-size : 40px
+  color : $cForeground
+
+#columbiadIntern
+  svg
+    width : 50px
+    height : 50px
+    padding-left : 10px
+    color : $cForeground
+  @include glowText($cForeground)
+  padding : 0
+  height : 100px
+  display : flex
+  align-items : center
+  justify-content : center
+  margin : 0
+  left : calc(50% + 1rem)
+  position : absolute
+  top : 44rem
+  font-size : 40px
+  color : $cForeground
+
+#uwaterlooStu
+  svg
+    width : 55px
+    height : 55px
+    padding-right : 10px
+    color : $cForeground
+  @include glowText($cForeground)
+  padding : 0
+  height : 100px
+  display : flex
+  align-items : center
+  justify-content : center
+  margin : 0
+  right : calc(50% + 0.05rem)
+  position : absolute
+  top : 52rem
+  font-size : 40px
+  color : $cForeground
+
+#uiStu
+  svg
+    width : 55px
+    height : 55px
+    padding-right : 10px
+    color : $cForeground
+  @include glowText($cForeground)
+  padding : 0
+  height : 100px
+  display : flex
+  align-items : center
+  justify-content : center
+  margin : 0
+  right : calc(50% + 0.05rem)
+  position : absolute
+  top : 60rem
+  font-size : 40px
+  color : $cForeground
+  img
+    //border : 2px solid $cForeground
+    border-radius : 100px
+    background-color : $cForeground
+
+#yourlogo:hover
+  color : $cYellow
+  svg
+    transform : scale(1.4)
+    color : $cYellow
+    transition : transform 500ms
+  transition : color 500ms
+
+#uwaterlooRA:hover, #columbiadIntern:hover
+  color : $cOrange
+  svg
+    transform : scale(1.2)
+    color : $cOrange
+    transition : transform 500ms
+  transition : color 500ms
+
+#uwaterlooStu:hover, #uiStu:hover
+  color : $cRed
+  svg
+    transform : scale(1.2)
+    color : $cRed
+    transition : transform 500ms
+  transition : color 500ms
+
+.abstract
+  text-align: justify
+  margin : 0
+.bottomPad
+  padding-top : 3rem
+  visibility : hidden
+
+#yourlogoContent, #uwaterlooRAContent, #columbiadInternContent, #uwaterlooStuContent, #uiStuContent
+  display : flex
+  overflow : auto
+  margin : 0
+  top : 0
+  left : 1rem
+  right : 1rem
+  bottom : 0
+  border-radius : 10px
+
+  position : fixed
+  flex-direction : column
+  //border : 5px solid $cPurple
+  //width : 90vw
+  background : rgba($cBackground, 0.9)
+  backdrop-filter : blur(3px)
+  opacity : 0
+  visibility : hidden
+  transition : opacity 500ms
+  z-index : 101
+
+  &::-webkit-scrollbar
+    width : 0.25rem
+  &::-webkit-scrollbar-track
+    background : $cBackground
+  &::-webkit-scrollbar-thumb
+    background : $cBlue
+
+  h5
+    margin : 0
+    font-family : $tFont
+    font-size : 15px
+    padding-left : 3rem
+
+
+  h3
+    @include glowText($cForeground)
+    padding-left : 3rem
+    margin : 0
+    font-size : 30px
+    font-family : $tFont
+  h4
+    padding : 1rem 3rem
+    margin : 0
+    font-size : 20px
+  p,ol,ul,span
+    padding : 5px 3rem
+  ul,ol
+    list-style : none
+    &>li
+      padding-bottom : 5px
+
+  ul>li::before
+    content : '🔥'
+  ol>li::before
+    content : '⭐'
+  ol>li::before
+
+#yourlogoContent:target
+  img
+    width : 100px
+    margin : 0 auto
+    padding-top : 3rem
+    padding-bottom : 2rem
+    justify-content : center
+  visibility : visible
+  opacity : 1
+
+
+#uwaterlooRAContent:target
+  img
+    width : 300px
+    margin : 0 auto
+    padding-top : 3rem
+    justify-content : center
+  visibility : visible
+  opacity : 1
+
+#columbiadInternContent:target
+  img
+    width : 200px
+    margin : 0 auto
+    padding-top : 3rem
+    justify-content : center
+  visibility : visible
+  opacity : 1
+
+#uwaterlooStuContent:target
+  img
+    width : 300px
+    margin : 0 auto
+    padding-top : 3rem
+    justify-content : center
+  visibility : visible
+  opacity : 1
+  ul,ol
+    &:last-child
+      padding-bottom : 3rem
+  //h5
+    margin : 0
+    font-family : $tFont
+    font-size : 15px
+    padding-left : 3rem
+
+#uiStuContent:target
+  img
+    width : 100px
+    margin : 0 auto
+    padding-top : 3rem
+    padding-bottom : 2rem
+    justify-content : center
+  visibility : visible
+  opacity : 1
+//#yourlogo:target ~ #yourlogoContent
+  display : flex
+  position : absolute
+  flex-direction : column
+  border : 5px solid $cPurple
+  width : 45%
+  height : 50vh
+  top : 28rem
+  left : 1rem
+

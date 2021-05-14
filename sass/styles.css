@@ -1,0 +1,562 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans&family=Oswald:wght@200;400&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap");
+.background {
+  position: fixed;
+  font-family: "Source Code Pro";
+  top: 0;
+  word-wrap: anywhere;
+  text-align: justify;
+  user-select: none;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(200, 205, 213, 0.4); }
+  .background .color0 {
+    text-shadow: 0 0 5px rgba(224, 108, 117, 0.4); }
+  .background .color1 {
+    text-shadow: 0 0 5px rgba(229, 192, 123, 0.4); }
+  .background .color2 {
+    text-shadow: 0 0 5px rgba(152, 195, 121, 0.4); }
+  .background .color3 {
+    text-shadow: 0 0 5px rgba(97, 175, 239, 0.4); }
+  .background .color4 {
+    text-shadow: 0 0 5px rgba(86, 182, 194, 0.4); }
+  .background .color5 {
+    text-shadow: 0 0 5px rgba(209, 154, 102, 0.4); }
+  .background .color6 {
+    text-shadow: 0 0 5px rgba(198, 120, 221, 0.4); }
+  .background .color7 {
+    text-shadow: 0 0 5px rgba(200, 205, 213, 0.4); }
+
+:root {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+body {
+  overflow-x: hidden;
+  background-color: #282c34;
+  color: #c8cdd5;
+  padding: 0;
+  margin: 0; }
+  body::-webkit-scrollbar {
+    width: 0.25rem; }
+  body::-webkit-scrollbar-track {
+    background: #282c34; }
+  body::-webkit-scrollbar-thumb {
+    background: #61AFEF; }
+
+/*! Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding-top: 5rem; }
+  header:after {
+    display: block;
+    content: "⚍⚌⚍";
+    font-size: 2rem;
+    margin: 0;
+    padding: 0; }
+
+.title {
+  font-size: 50px;
+  font-family: "Monoton", cursive;
+  margin-bottom: 0;
+  color: #c8cdd5;
+  text-shadow: currentColor 0 0 0.5em;
+  position: relative;
+  padding-left: 0.5em;
+  padding-right: 0.5em; }
+  .title::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: currentColor;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.5; }
+  .title:hover {
+    transition: text-shadow 200ms linear;
+    color: #61AFEF;
+    text-shadow: currentColor 0 0 0.7em; }
+  .title::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: currentColor;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0;
+    transition: opacity 100ms linear; }
+  .title:hover::after {
+    opacity: 1; }
+
+header ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-family: "Oswald", sans-serif; }
+
+.subtitle {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 0;
+  color: #c8cdd5;
+  text-shadow: currentColor 0 0 0.5em;
+  position: relative;
+  padding-left: 0.5em;
+  padding-right: 0.5em; }
+  .subtitle li {
+    padding: 0rem 0.5rem; }
+    .subtitle li:first-child {
+      padding-left: 0; }
+    .subtitle li:last-child {
+      padding-right: 0; }
+
+.navbar {
+  z-index: 100;
+  width: 100vw;
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  border-top: 2px solid #282c34;
+  border-bottom: 2px solid #282c34;
+  background-color: rgba(40, 44, 52, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px); }
+
+.navbarNav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 5rem; }
+
+.navItem {
+  height: 5rem;
+  width: 5rem;
+  padding: 0 1rem; }
+
+.navLink {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  width: 5rem;
+  color: #c8cdd5; }
+  .navLink ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .navLink ul .icon {
+      display: flex;
+      height: 3rem;
+      width: 3rem; }
+    .navLink ul .description {
+      display: none; }
+  .navLink:hover .description {
+    display: flex; }
+
+.navbarNav > .navItem:first-child > .navLink:hover {
+  transition: text-shadow 200ms linear;
+  color: #61AFEF;
+  text-shadow: currentColor 0 0 0.7em; }
+
+.navbarNav > .navItem:nth-child(2) > .navLink:hover {
+  transition: text-shadow 200ms linear;
+  color: #E5C07B;
+  text-shadow: currentColor 0 0 0.7em; }
+
+.navbarNav > .navItem:nth-child(3) > .navLink:hover {
+  transition: text-shadow 200ms linear;
+  color: #98C379;
+  text-shadow: currentColor 0 0 0.7em; }
+
+.navbarNav > .navItem:nth-child(4) > .navLink:hover {
+  transition: text-shadow 200ms linear;
+  color: #E06C75;
+  text-shadow: currentColor 0 0 0.7em; }
+
+.navbarNav > .navItem:last-child > .navLink:hover {
+  transition: text-shadow 200ms linear;
+  color: #C678DD;
+  text-shadow: currentColor 0 0 0.7em; }
+
+footer {
+  bottom: 0;
+  background-color: rgba(40, 44, 52, 0.5);
+  height: 5rem;
+  width: 100vw;
+  overflow: hidden;
+  border-top: 2px solid #282c34;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  justify-content: center; }
+  footer > p {
+    font-family: "Oswald", sans-serif;
+    text-align: center; }
+  footer:before {
+    display: block;
+    content: "⚍⚌⚍";
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+
+.welcome {
+  display: block;
+  width: 60vw;
+  margin: 25px 20vw;
+  border-radius: 20px;
+  justify-content: center; }
+  .welcome p {
+    margin: 5px;
+    font-family: "Source Code Pro";
+    font-size: 20px;
+    color: #c8cdd5;
+    text-shadow: currentColor 0 0 0.5em;
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em; }
+
+#line17 {
+  width: 90px;
+  overflow: hidden;
+  border-right: 0.15rem solid #61AFEF;
+  white-space: nowrap;
+  letter-spacing: 0.15rem;
+  animation: blinkCaret 1s steps(50, end) infinite; }
+@keyframes blinkCaret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: #61AFEF; } }
+.bgPole {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  width: 3rem;
+  position: relative; }
+
+#bgRobot {
+  position: absolute;
+  top: 2.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding-bottom: 0.5rem;
+  color: #282c34;
+  margin-left: 0.92rem; }
+
+#poleHead {
+  width: 1rem;
+  height: 1rem;
+  background-color: #E5C07B;
+  border: 1rem solid #E5C07B;
+  border-radius: 1rem;
+  margin-left: 0.92rem; }
+
+#poleBody {
+  height: 40rem;
+  width: 1rem;
+  border: 1px transparent #E5C07B;
+  background: linear-gradient(to bottom, #E5C07B, #282c34);
+  margin-left: 0.92rem; }
+
+#poleEnd {
+  width: 1rem;
+  height: 1rem;
+  background-color: #282c34;
+  border: 1rem solid #282c34;
+  border-radius: 1rem;
+  margin-left: 0.92rem; }
+
+#bgAtom {
+  position: absolute;
+  bottom: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding-bottom: 0.5rem;
+  color: #E5C07B;
+  margin-left: 0.92rem; }
+
+a {
+  text-decoration: none;
+  color: #c8cdd5; }
+
+#yourlogo {
+  color: #c8cdd5;
+  text-shadow: currentColor 0 0 0.5em;
+  position: relative;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 28rem;
+  padding: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  left: calc(50% + 1rem);
+  font-size: 40px; }
+  #yourlogo svg {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    color: #c8cdd5; }
+
+#uwaterlooRA {
+  color: #c8cdd5;
+  text-shadow: currentColor 0 0 0.5em;
+  position: relative;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  left: calc(50% + 1rem);
+  position: absolute;
+  top: 36rem;
+  font-size: 40px;
+  color: #c8cdd5; }
+  #uwaterlooRA svg {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    color: #c8cdd5; }
+
+#columbiadIntern {
+  color: #c8cdd5;
+  text-shadow: currentColor 0 0 0.5em;
+  position: relative;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  left: calc(50% + 1rem);
+  position: absolute;
+  top: 44rem;
+  font-size: 40px;
+  color: #c8cdd5; }
+  #columbiadIntern svg {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    color: #c8cdd5; }
+
+#uwaterlooStu {
+  color: #c8cdd5;
+  text-shadow: currentColor 0 0 0.5em;
+  position: relative;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  right: calc(50% + 0.05rem);
+  position: absolute;
+  top: 52rem;
+  font-size: 40px;
+  color: #c8cdd5; }
+  #uwaterlooStu svg {
+    width: 55px;
+    height: 55px;
+    padding-right: 10px;
+    color: #c8cdd5; }
+
+#uiStu {
+  color: #c8cdd5;
+  text-shadow: currentColor 0 0 0.5em;
+  position: relative;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  right: calc(50% + 0.05rem);
+  position: absolute;
+  top: 60rem;
+  font-size: 40px;
+  color: #c8cdd5; }
+  #uiStu svg {
+    width: 55px;
+    height: 55px;
+    padding-right: 10px;
+    color: #c8cdd5; }
+  #uiStu img {
+    border-radius: 100px;
+    background-color: #c8cdd5; }
+
+#yourlogo:hover {
+  color: #E5C07B;
+  transition: color 500ms; }
+  #yourlogo:hover svg {
+    transform: scale(1.4);
+    color: #E5C07B;
+    transition: transform 500ms; }
+
+#uwaterlooRA:hover, #columbiadIntern:hover {
+  color: #D19A66;
+  transition: color 500ms; }
+  #uwaterlooRA:hover svg, #columbiadIntern:hover svg {
+    transform: scale(1.2);
+    color: #D19A66;
+    transition: transform 500ms; }
+
+#uwaterlooStu:hover, #uiStu:hover {
+  color: #E06C75;
+  transition: color 500ms; }
+  #uwaterlooStu:hover svg, #uiStu:hover svg {
+    transform: scale(1.2);
+    color: #E06C75;
+    transition: transform 500ms; }
+
+.abstract {
+  text-align: justify;
+  margin: 0; }
+
+.bottomPad {
+  padding-top: 3rem;
+  visibility: hidden; }
+
+#yourlogoContent, #uwaterlooRAContent, #columbiadInternContent, #uwaterlooStuContent, #uiStuContent {
+  display: flex;
+  overflow: auto;
+  margin: 0;
+  top: 0;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+  border-radius: 10px;
+  position: fixed;
+  flex-direction: column;
+  background: rgba(40, 44, 52, 0.9);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms;
+  z-index: 101; }
+  #yourlogoContent::-webkit-scrollbar, #uwaterlooRAContent::-webkit-scrollbar, #columbiadInternContent::-webkit-scrollbar, #uwaterlooStuContent::-webkit-scrollbar, #uiStuContent::-webkit-scrollbar {
+    width: 0.25rem; }
+  #yourlogoContent::-webkit-scrollbar-track, #uwaterlooRAContent::-webkit-scrollbar-track, #columbiadInternContent::-webkit-scrollbar-track, #uwaterlooStuContent::-webkit-scrollbar-track, #uiStuContent::-webkit-scrollbar-track {
+    background: #282c34; }
+  #yourlogoContent::-webkit-scrollbar-thumb, #uwaterlooRAContent::-webkit-scrollbar-thumb, #columbiadInternContent::-webkit-scrollbar-thumb, #uwaterlooStuContent::-webkit-scrollbar-thumb, #uiStuContent::-webkit-scrollbar-thumb {
+    background: #61AFEF; }
+  #yourlogoContent h5, #uwaterlooRAContent h5, #columbiadInternContent h5, #uwaterlooStuContent h5, #uiStuContent h5 {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    padding-left: 3rem; }
+  #yourlogoContent h3, #uwaterlooRAContent h3, #columbiadInternContent h3, #uwaterlooStuContent h3, #uiStuContent h3 {
+    color: #c8cdd5;
+    text-shadow: currentColor 0 0 0.5em;
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 3rem;
+    margin: 0;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif; }
+  #yourlogoContent h4, #uwaterlooRAContent h4, #columbiadInternContent h4, #uwaterlooStuContent h4, #uiStuContent h4 {
+    padding: 1rem 3rem;
+    margin: 0;
+    font-size: 20px; }
+  #yourlogoContent p, #yourlogoContent ol, #yourlogoContent ul, #yourlogoContent span, #uwaterlooRAContent p, #uwaterlooRAContent ol, #uwaterlooRAContent ul, #uwaterlooRAContent span, #columbiadInternContent p, #columbiadInternContent ol, #columbiadInternContent ul, #columbiadInternContent span, #uwaterlooStuContent p, #uwaterlooStuContent ol, #uwaterlooStuContent ul, #uwaterlooStuContent span, #uiStuContent p, #uiStuContent ol, #uiStuContent ul, #uiStuContent span {
+    padding: 5px 3rem; }
+  #yourlogoContent ul, #yourlogoContent ol, #uwaterlooRAContent ul, #uwaterlooRAContent ol, #columbiadInternContent ul, #columbiadInternContent ol, #uwaterlooStuContent ul, #uwaterlooStuContent ol, #uiStuContent ul, #uiStuContent ol {
+    list-style: none; }
+    #yourlogoContent ul > li, #yourlogoContent ol > li, #uwaterlooRAContent ul > li, #uwaterlooRAContent ol > li, #columbiadInternContent ul > li, #columbiadInternContent ol > li, #uwaterlooStuContent ul > li, #uwaterlooStuContent ol > li, #uiStuContent ul > li, #uiStuContent ol > li {
+      padding-bottom: 5px; }
+  #yourlogoContent ul > li::before, #uwaterlooRAContent ul > li::before, #columbiadInternContent ul > li::before, #uwaterlooStuContent ul > li::before, #uiStuContent ul > li::before {
+    content: "🔥"; }
+  #yourlogoContent ol > li::before, #uwaterlooRAContent ol > li::before, #columbiadInternContent ol > li::before, #uwaterlooStuContent ol > li::before, #uiStuContent ol > li::before {
+    content: "⭐"; }
+
+#yourlogoContent:target {
+  visibility: visible;
+  opacity: 1; }
+  #yourlogoContent:target img {
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    justify-content: center; }
+
+#uwaterlooRAContent:target {
+  visibility: visible;
+  opacity: 1; }
+  #uwaterlooRAContent:target img {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 3rem;
+    justify-content: center; }
+
+#columbiadInternContent:target {
+  visibility: visible;
+  opacity: 1; }
+  #columbiadInternContent:target img {
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 3rem;
+    justify-content: center; }
+
+#uwaterlooStuContent:target {
+  visibility: visible;
+  opacity: 1; }
+  #uwaterlooStuContent:target img {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 3rem;
+    justify-content: center; }
+  #uwaterlooStuContent:target ul:last-child, #uwaterlooStuContent:target ol:last-child {
+    padding-bottom: 3rem; }
+
+#uiStuContent:target {
+  visibility: visible;
+  opacity: 1; }
+  #uiStuContent:target img {
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    justify-content: center; }
+
+p {
+  margin: 10px; }
+
+/*# sourceMappingURL=styles.css.map */
