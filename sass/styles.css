@@ -38,6 +38,7 @@ a {
 body {
   overflow-x: hidden;
   position: relative;
+  min-height: 95vh;
   background-color: #282c34;
   color: #c8cdd5;
   padding-bottom: 5rem;
