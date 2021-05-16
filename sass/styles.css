@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans&family=Oswald:wght@200;400&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap");
 .background {
+  width: 100vw;
   z-index: -1;
   position: fixed;
   font-family: "Source Code Pro";
@@ -36,9 +37,10 @@ a {
 
 body {
   overflow-x: hidden;
+  position: relative;
   background-color: #282c34;
   color: #c8cdd5;
-  padding: 0;
+  padding-bottom: 5rem;
   margin: 0; }
   body::-webkit-scrollbar {
     width: 0.25rem; }
@@ -204,6 +206,7 @@ header ul {
 footer {
   bottom: 0;
   background-color: rgba(40, 44, 52, 0.5);
+  position: absolute;
   height: 5rem;
   width: 100vw;
   overflow: hidden;
