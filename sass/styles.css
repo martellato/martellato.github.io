@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans&family=Oswald:wght@200;400&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap");
 .background {
+  z-index: -1;
   position: fixed;
   font-family: "Source Code Pro";
   top: 0;
@@ -172,6 +173,7 @@ header ul {
     .navLink ul .description {
       display: none; }
   .navLink:hover .description {
+    transition: all 150ms;
     display: flex; }
 
 .navbarNav > .navItem:first-child > .navLink:hover {
@@ -556,7 +558,290 @@ a {
     padding-bottom: 2rem;
     justify-content: center; }
 
-p {
-  margin: 10px; }
+#cert {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  padding: 1rem; }
+  #cert svg {
+    color: #c8cdd5; }
+
+#cert:hover svg {
+  color: #E5C07B;
+  transform: scale(1.2);
+  transition: all 500ms; }
+
+.skillContainer {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border: 3px solid rgba(152, 195, 121, 0.5);
+  box-shadow: #98C379 0 0 1rem, inset #98C379 0 0 1rem;
+  border-radius: 30px; }
+  .skillContainer h4 {
+    color: rgba(152, 195, 121, 0.7);
+    font-size: 16px;
+    text-shadow: #98C379 0 0 1rem;
+    margin: 0;
+    padding: 1rem; }
+
+#lang {
+  margin: 3rem 30vw 3rem auto; }
+
+#tools {
+  margin: 3rem auto 3rem 30vw;
+  height: 310px; }
+
+#db {
+  margin: 3rem 30vw 3rem auto;
+  height: 280px; }
+
+.skillRow {
+  display: flex;
+  padding: 3px;
+  align-items: center;
+  justify-content: center; }
+
+.skillItem {
+  padding: 3px; }
+
+.skillItem:hover {
+  transform: scale(1.15);
+  transition: all 500ms; }
+
+#footInfo {
+  text-align: center; }
+
+.langContent, .toolContent, .dbContent {
+  position: absolute;
+  top: 442px;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  visibility: hidden;
+  right: calc(30vw + 3px);
+  backdrop-filter: blur(3px);
+  background-color: rgba(40, 44, 52, 0.9);
+  box-shadow: #282c34 0 0 1rem 1rem, inset #282c34 0 0 1rem 1rem; }
+  .langContent h3, .toolContent h3, .dbContent h3 {
+    color: #c8cdd5;
+    text-shadow: currentColor 0 0 0.5em;
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    padding: 1rem; }
+  .langContent .skillRating, .toolContent .skillRating, .dbContent .skillRating {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-shadow: #c8cdd5 0 0 0.5rem; }
+  .langContent .skillExtra, .toolContent .skillExtra, .dbContent .skillExtra {
+    text-align: center;
+    padding: 0.5rem;
+    font-family: "Source Code Pro";
+    font-weight: bold; }
+    .langContent .skillExtra::before, .toolContent .skillExtra::before, .dbContent .skillExtra::before {
+      content: "—\a";
+      white-space: pre; }
+
+.toolContent {
+  height: 310px;
+  top: 795px;
+  left: calc(30vw + 5px); }
+
+.dbContent {
+  top: 1160px;
+  height: 280px; }
+
+#pyContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#matlabContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#rustContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#cppContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#cContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#jsContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#tsContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#linuxContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#gitContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#dockerContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#qtContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#hadoopContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#awsContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#gcpContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#sparkContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#hiveContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#sqlContent:target {
+  visibility: visible;
+  pointer-events: auto;
+  scroll-margin-top: 20rem;
+  opacity: 1; }
+
+#certContent {
+  display: flex;
+  overflow: auto;
+  margin: 0;
+  top: 0;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+  border-radius: 10px;
+  position: fixed;
+  flex-direction: column;
+  background: rgba(40, 44, 52, 0.9);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms;
+  z-index: 101; }
+  #certContent::-webkit-scrollbar {
+    width: 0.25rem; }
+  #certContent::-webkit-scrollbar-track {
+    background: #282c34; }
+  #certContent::-webkit-scrollbar-thumb {
+    background: #61AFEF; }
+  #certContent h3 {
+    color: #c8cdd5;
+    text-shadow: currentColor 0 0 0.5em;
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 3rem;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif; }
+  #certContent .certItem {
+    padding-left: 3rem;
+    padding-top: 2px;
+    font-family: "Open Sans", sans-serif; }
+    #certContent .certItem::before {
+      content: "🔥";
+      padding: 0.5rem; }
+
+#certContent:target {
+  visibility: visible;
+  opacity: 1; }
+
+#wip {
+  text-align: center; }
+
+#funImg {
+  display: flex;
+  margin: auto;
+  padding: 3rem;
+  justify-content: center; }
+
+.contactContainer {
+  display: flex;
+  padding: 3rem;
+  margin: auto;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  height: 50vh; }
+
+.contactItem {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  align-content: center; }
+  .contactItem svg {
+    width: 50px;
+    height: 50px; }
+
+.contactDescription {
+  padding: 1rem;
+  display: none;
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  text-shadow: #C678DD 0 0 1rem; }
+
+.contactItem:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+  color: #C678DD; }
+  .contactItem:hover .contactDescription {
+    display: inline; }
 
 /*# sourceMappingURL=styles.css.map */
