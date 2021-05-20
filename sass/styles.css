@@ -228,26 +228,47 @@ footer {
 
 .welcome {
   display: block;
+  max-width: 800px;
   width: 60vw;
-  margin: 25px 20vw;
-  border-radius: 20px;
+  margin: 2rem auto;
   justify-content: center; }
   .welcome p {
-    margin: 5px;
-    font-family: "Source Code Pro";
+    font-family: "Open Sans", sans-serif;
     font-size: 20px;
-    color: #c8cdd5;
-    text-shadow: currentColor 0 0 0.5em;
-    position: relative;
-    padding-left: 0.5em;
-    padding-right: 0.5em; }
+    padding: 3px;
+    text-shadow: #c8cdd5 0 0 0.5rem; }
+  .welcome .summary {
+    border: 3px solid #61AFEF;
+    text-shadow: #61AFEF 0 0 0.5rem;
+    padding: 1rem;
+    background: rgba(40, 44, 52, 0.7);
+    backdrop-filter: blur(3px);
+    border-radius: 1rem;
+    text-indent: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    list-style: none; }
+    .welcome .summary > li {
+      padding: 3px; }
+    .welcome .summary > li::before {
+      content: "🔵"; }
+  .welcome .summary::before {
+    content: "Summary of skills and qualifications";
+    font-family: "Oswald", sans-serif;
+    color: #61AFEF;
+    font-size: 18px;
+    padding: 1rem;
+    text-align: center; }
 
-#line17 {
-  width: 90px;
+#cat {
+  font-family: "Source Code Pro";
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 16px;
+  width: 9rem;
   overflow: hidden;
   border-right: 0.15rem solid #61AFEF;
   white-space: nowrap;
-  letter-spacing: 0.15rem;
   animation: blinkCaret 1s steps(50, end) infinite; }
 @keyframes blinkCaret {
   from, to {

@@ -5,19 +5,50 @@
   display: block
   //border : 3px solid $cBlue
   //flex-direction: column
+  max-width: 800px
   width : 60vw
-  margin: 25px 20vw
-  border-radius: 20px
+  margin: 2rem auto
   justify-content: center
+  //text-align: justify
   //min-height: calc(100vh - 20rem)
   //backdrop-filter: blur(3px)
   p
-    margin: 5px
-    font-family: $mFont
+    //margin: 5px
+    font-family: $bFont
     font-size: 20px
-    @include glowText($cForeground)
+    padding : 3px
+    text-shadow: $cForeground 0 0 0.5rem
+  .summary
+    border : 3px solid $cBlue
+    //margin : 4px
+    text-shadow: $cBlue 0 0 0.5rem
+    padding : 1rem
+    background: rgba($cBackground, 0.7)
+    backdrop-filter: blur(3px)
+    border-radius: 1rem
+    text-indent: 0
+    font-family: $tFont
+    font-size : 18px
+    list-style: none
+    &>li
+      padding : 3px
+    &>li::before
+      content : "🔵"
+  .summary::before
+    content : "Summary of skills and qualifications"
+    font-family : $tFont
+    color : $cBlue
+    font-size: 18px
+    padding : 1rem
+    text-align: center
 
-
-#line17
+#cat
+  font-family: $mFont
+  margin-bottom: 0
+  padding-bottom: 0
+  font-size: 16px
+  width: 9rem
+  @include animateType($cBlue, 90px)
+//#line2
   width : 90px
   @include animateType($cBlue,90px)
