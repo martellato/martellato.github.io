@@ -72,7 +72,8 @@
   box-shadow : $cBackground 0 0 1rem 1rem, inset $cBackground 0 0 1rem 1rem
 
   h3
-    @include glowText($cForeground)
+    //@include glowText($cForeground)
+    text-shadow: $cGreen 0 0 1rem
     text-align: center
     font-family: $tFont
     font-size: 25px
@@ -214,7 +215,7 @@
   right : 1rem
   bottom : 0
   border-radius : 10px
-
+  border : 5px solid $cGreen
   position : fixed
   flex-direction : column
   //border : 5px solid $cPurple
@@ -235,7 +236,8 @@
 
 
   h3
-    @include glowText($cForeground)
+    //@include glowText($cForeground)
+    text-shadow: $cGreen 0 0 1rem
     padding-left : 3rem
     font-size : 30px
     font-family : $tFont
@@ -245,7 +247,7 @@
     padding-top: 2px
     font-family: $bFont
     &::before
-      content: '🔥'
+      content: '✅'
       padding : 0.5rem
 
 

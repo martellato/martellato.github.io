@@ -258,7 +258,6 @@ footer {
     font-family: "Oswald", sans-serif;
     color: #61AFEF;
     font-size: 18px;
-    padding: 1rem;
     text-align: center; }
 
 #cat {
@@ -513,11 +512,7 @@ a {
     font-size: 15px;
     padding-left: 3rem; }
   #yourlogoContent h3, #uwaterlooRAContent h3, #columbiadInternContent h3, #uwaterlooStuContent h3, #uiStuContent h3 {
-    color: #c8cdd5;
-    text-shadow: currentColor 0 0 0.5em;
-    position: relative;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    text-shadow: #E5C07B 0 0 1rem;
     padding-left: 3rem;
     margin: 0;
     font-size: 30px;
@@ -655,11 +650,7 @@ a {
   background-color: rgba(40, 44, 52, 0.9);
   box-shadow: #282c34 0 0 1rem 1rem, inset #282c34 0 0 1rem 1rem; }
   .langContent h3, .toolContent h3, .dbContent h3 {
-    color: #c8cdd5;
-    text-shadow: currentColor 0 0 0.5em;
-    position: relative;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    text-shadow: #98C379 0 0 1rem;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-size: 25px;
@@ -798,6 +789,7 @@ a {
   right: 1rem;
   bottom: 0;
   border-radius: 10px;
+  border: 5px solid #98C379;
   position: fixed;
   flex-direction: column;
   background: rgba(40, 44, 52, 0.9);
@@ -813,11 +805,7 @@ a {
   #certContent::-webkit-scrollbar-thumb {
     background: #61AFEF; }
   #certContent h3 {
-    color: #c8cdd5;
-    text-shadow: currentColor 0 0 0.5em;
-    position: relative;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    text-shadow: #98C379 0 0 1rem;
     padding-left: 3rem;
     font-size: 30px;
     font-family: "Oswald", sans-serif; }
@@ -826,7 +814,7 @@ a {
     padding-top: 2px;
     font-family: "Open Sans", sans-serif; }
     #certContent .certItem::before {
-      content: "🔥";
+      content: "✅";
       padding: 0.5rem; }
 
 #certContent:target {
