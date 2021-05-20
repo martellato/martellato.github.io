@@ -509,9 +509,11 @@ a {
     #yourlogoContent ul > li, #yourlogoContent ol > li, #uwaterlooRAContent ul > li, #uwaterlooRAContent ol > li, #columbiadInternContent ul > li, #columbiadInternContent ol > li, #uwaterlooStuContent ul > li, #uwaterlooStuContent ol > li, #uiStuContent ul > li, #uiStuContent ol > li {
       padding-bottom: 5px; }
   #yourlogoContent ul > li::before, #uwaterlooRAContent ul > li::before, #columbiadInternContent ul > li::before, #uwaterlooStuContent ul > li::before, #uiStuContent ul > li::before {
-    content: "🔥"; }
+    content: "🔥";
+    padding: 2px; }
   #yourlogoContent ol > li::before, #uwaterlooRAContent ol > li::before, #columbiadInternContent ol > li::before, #uwaterlooStuContent ol > li::before, #uiStuContent ol > li::before {
-    content: "⭐"; }
+    content: "⭐";
+    padding: 2px; }
 
 #yourlogoContent:target {
   visibility: visible;
