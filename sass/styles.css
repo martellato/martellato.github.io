@@ -9,24 +9,25 @@
   word-wrap: anywhere;
   text-align: justify;
   user-select: none;
+  filter: blur(3px);
   color: transparent;
-  text-shadow: 0 0 5px rgba(200, 205, 213, 0.4); }
+  text-shadow: 0 0 5px rgba(200, 205, 213, 0.5); }
   .background .color0 {
-    text-shadow: 0 0 5px rgba(224, 108, 117, 0.4); }
+    text-shadow: 0 0 5px rgba(224, 108, 117, 0.5); }
   .background .color1 {
-    text-shadow: 0 0 5px rgba(229, 192, 123, 0.4); }
+    text-shadow: 0 0 5px rgba(229, 192, 123, 0.5); }
   .background .color2 {
-    text-shadow: 0 0 5px rgba(152, 195, 121, 0.4); }
+    text-shadow: 0 0 5px rgba(152, 195, 121, 0.5); }
   .background .color3 {
-    text-shadow: 0 0 5px rgba(97, 175, 239, 0.4); }
+    text-shadow: 0 0 5px rgba(97, 175, 239, 0.5); }
   .background .color4 {
-    text-shadow: 0 0 5px rgba(86, 182, 194, 0.4); }
+    text-shadow: 0 0 5px rgba(86, 182, 194, 0.5); }
   .background .color5 {
-    text-shadow: 0 0 5px rgba(209, 154, 102, 0.4); }
+    text-shadow: 0 0 5px rgba(209, 154, 102, 0.5); }
   .background .color6 {
-    text-shadow: 0 0 5px rgba(198, 120, 221, 0.4); }
+    text-shadow: 0 0 5px rgba(198, 120, 221, 0.5); }
   .background .color7 {
-    text-shadow: 0 0 5px rgba(200, 205, 213, 0.4); }
+    text-shadow: 0 0 5px rgba(200, 205, 213, 0.5); }
 
 :root {
   font-size: 16px;
@@ -484,14 +485,16 @@ a {
 #yourlogoContent, #uwaterlooRAContent, #columbiadInternContent, #uwaterlooStuContent, #uiStuContent {
   display: flex;
   overflow: auto;
-  margin: 0;
+  margin: 0 auto;
   top: 0;
   left: 1rem;
   right: 1rem;
   bottom: 0;
   border-radius: 10px;
+  max-width: 800px;
   position: fixed;
   flex-direction: column;
+  border: 5px solid #e5c07b;
   background: rgba(40, 44, 52, 0.9);
   backdrop-filter: blur(3px);
   opacity: 0;
