@@ -133,6 +133,7 @@ header ul {
   position: sticky;
   top: 0;
   margin: 0;
+  box-shadow: #282c34 0 0 1rem, #282c34 inset 0 0 1rem;
   border-top: 2px solid #282c34;
   border-bottom: 2px solid #282c34;
   background-color: rgba(40, 44, 52, 0.5);
@@ -207,6 +208,7 @@ header ul {
 footer {
   bottom: 0;
   background-color: rgba(40, 44, 52, 0.5);
+  box-shadow: #282c34 0 0 1rem, #282c34 inset 0 0 1rem;
   position: absolute;
   height: 5rem;
   width: 100vw;
@@ -780,6 +782,7 @@ a {
   opacity: 1; }
 
 #certContent {
+  padding: 2rem 0;
   display: flex;
   overflow: auto;
   margin: 0;
