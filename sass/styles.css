@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans&family=Oswald:wght@200;400&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Open+Sans&family=Oswald:wght@200;400&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap");
 .background {
   width: 100vw;
   z-index: -1;
@@ -68,8 +68,8 @@ header {
     padding: 0; }
 
 .title {
-  font-size: 3rem;
-  font-family: "Lemon", cursive;
+  font-size: 5rem;
+  font-family: "Megrim", cursive;
   margin-bottom: 0;
   color: #c8cdd5;
   text-shadow: currentColor 0 0 0.5em;
@@ -660,7 +660,7 @@ a {
 
 .langContent, .toolContent, .dbContent {
   position: absolute;
-  top: 442px;
+  top: 475px;
   width: 300px;
   height: 300px;
   border-radius: 30px;
@@ -691,11 +691,11 @@ a {
 
 .toolContent {
   height: 310px;
-  top: 795px;
+  top: 830px;
   left: calc(30vw + 5px); }
 
 .dbContent {
-  top: 1160px;
+  top: 1195px;
   height: 280px; }
 
 #pyContent:target {
