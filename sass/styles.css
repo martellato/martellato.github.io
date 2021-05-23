@@ -345,7 +345,7 @@ a {
   padding-left: 0.5em;
   padding-right: 0.5em;
   position: absolute;
-  top: 28rem;
+  top: 30rem;
   padding: 0;
   height: 100px;
   display: flex;
@@ -374,7 +374,7 @@ a {
   margin: 0;
   left: calc(50% + 0.5rem);
   position: absolute;
-  top: 36rem;
+  top: 38rem;
   font-size: 40px;
   color: #c8cdd5; }
   #uwaterlooRA svg {
@@ -397,7 +397,7 @@ a {
   margin: 0;
   left: calc(50% + 0.5rem);
   position: absolute;
-  top: 44rem;
+  top: 46rem;
   font-size: 40px;
   color: #c8cdd5; }
   #columbiadIntern svg {
@@ -420,7 +420,7 @@ a {
   margin: 0;
   right: calc(50% + 0.5rem);
   position: absolute;
-  top: 52rem;
+  top: 54rem;
   font-size: 40px;
   color: #c8cdd5; }
   #uwaterlooStu svg {
@@ -443,7 +443,7 @@ a {
   margin: 0;
   right: calc(50% + 0.5rem);
   position: absolute;
-  top: 60rem;
+  top: 62rem;
   font-size: 40px;
   color: #c8cdd5; }
   #uiStu svg {
