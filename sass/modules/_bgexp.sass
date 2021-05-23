@@ -3,10 +3,10 @@
 
 $cPole : $cYellow
 $poleHeight : 40rem
-$marginLeft : 0.92rem
+$marginLeft : 0rem
 .bgPole
-  display : flex
-  flex-direction : column
+  display : block
+  //flex-direction : column
   margin : 0 auto
   padding : 2rem
   justify-content : center
@@ -16,7 +16,7 @@ $marginLeft : 0.92rem
   width : 3rem
   position : relative
 
-#bgRobot
+//#bgRobot
   position : absolute
   top : 2.3rem
   width : 2.5rem
@@ -26,28 +26,43 @@ $marginLeft : 0.92rem
   margin-left : $marginLeft
 
 #poleHead
-  width : 1rem
-  height : 1rem
+  width : 2.5rem
+  height : 2.5rem
   background-color : $cPole
-  border : 1rem solid $cPole
+  border : 0.3rem solid $cPole
   border-radius : 1rem
-  margin-left : $marginLeft
+  //margin-left : $marginLeft
+  margin: auto
+  svg
+    width : 100%
+    height : 100%
+    color : $cBackground
+    margin: auto
+    padding: 0
 
 #poleBody
+  margin: auto
   height : $poleHeight
   width : 1rem
   //background-color : $cPole
   border : 1px transparent $cPole
   background : linear-gradient(to bottom, $cYellow, $cBackground)
-  margin-left : $marginLeft
+  //margin-left : $marginLeft
 
 #poleEnd
-  width : 1rem
-  height : 1rem
+  width : 2.5rem
+  height : 2.5rem
   background-color : $cBackground
-  border : 1rem solid $cBackground
+  border : 0.3rem solid $cBackground
   border-radius : 1rem
-  margin-left : $marginLeft
+  //margin-left : $marginLeft
+  margin : auto
+  svg
+    width : 100%
+    height : 100%
+    color : $cYellow
+    margin: auto
+    padding: 0
 
 #bgAtom
   position : absolute
@@ -77,7 +92,7 @@ a
   align-items : center
   justify-content : center
   margin : 0
-  left : calc(50% + 1rem)
+  left : calc(50% + 0.5rem)
   font-size : 40px
 #uwaterlooRA
   svg
@@ -92,7 +107,7 @@ a
   align-items : center
   justify-content : center
   margin : 0
-  left : calc(50% + 1rem)
+  left : calc(50% + 0.5rem)
   position : absolute
   top : 36rem
   font-size : 40px
@@ -111,7 +126,7 @@ a
   align-items : center
   justify-content : center
   margin : 0
-  left : calc(50% + 1rem)
+  left : calc(50% + 0.5rem)
   position : absolute
   top : 44rem
   font-size : 40px
@@ -130,7 +145,7 @@ a
   align-items : center
   justify-content : center
   margin : 0
-  right : calc(50% + 0.05rem)
+  right : calc(50% + 0.5rem)
   position : absolute
   top : 52rem
   font-size : 40px
@@ -149,7 +164,7 @@ a
   align-items : center
   justify-content : center
   margin : 0
-  right : calc(50% + 0.05rem)
+  right : calc(50% + 0.5rem)
   position : absolute
   top : 60rem
   font-size : 40px
