@@ -7,6 +7,7 @@
   font-family: "Source Code Pro";
   top: 0;
   word-wrap: break-word;
+  overflow-wrap: break-word;
   text-align: justify;
   user-select: none;
   color: transparent;
