@@ -6,7 +6,7 @@
   position: fixed;
   font-family: "Source Code Pro";
   top: 0;
-  word-wrap: anywhere;
+  word-wrap: break-word;
   text-align: justify;
   user-select: none;
   color: transparent;
