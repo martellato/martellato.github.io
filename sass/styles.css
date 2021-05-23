@@ -37,6 +37,8 @@ a {
   text-decoration: none; }
 
 body {
+  width: 100vw;
+  overflow: auto;
   overflow-x: hidden;
   position: relative;
   min-height: 95vh;
