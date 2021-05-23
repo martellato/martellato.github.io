@@ -729,12 +729,6 @@ a {
   scroll-margin-top: 20rem;
   opacity: 1; }
 
-#tsContent:target {
-  visibility: visible;
-  pointer-events: auto;
-  scroll-margin-top: 20rem;
-  opacity: 1; }
-
 #linuxContent:target {
   visibility: visible;
   pointer-events: auto;
