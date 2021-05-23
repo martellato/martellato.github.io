@@ -585,17 +585,31 @@ a {
     justify-content: center; }
 
 #cert {
-  display: block;
-  width: 48px;
-  height: 48px;
-  margin: 0 auto;
-  padding: 1rem; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 1rem; }
   #cert svg {
-    color: #c8cdd5; }
+    display: block;
+    margin: auto;
+    color: #c8cdd5;
+    width: 48px;
+    height: 48px; }
+  #cert #certDescription {
+    padding-top: 1rem;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    visibility: hidden; }
 
 #cert:hover svg {
   color: #E5C07B;
   transform: scale(1.2);
+  transition: all 500ms; }
+#cert:hover #certDescription {
+  visibility: visible;
+  color: #E5C07B;
+  text-shadow: #E5C07B 0 0 1rem;
   transition: all 500ms; }
 
 .skillContainer {

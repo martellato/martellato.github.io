@@ -2,18 +2,38 @@
 @import ../variables
 
 #cert
-  display : block
-  width : 48px
-  height : 48px
-  margin : 0 auto
-  padding : 1rem
+  display : flex
+
+  //margin : 0 auto
+  align-items: center
+  justify-content: center
+  padding-bottom: 2rem
+  padding-top : 1rem
   svg
+    display: block
+    margin : auto
     color : $cForeground
+    width : 48px
+    height : 48px
+  #certDescription
+    padding-top : 1rem
+    text-align: center
+    font-family: $tFont
+    visibility: hidden
+    //color: $cYellow
+    //text-shadow: $cYellow 0 0 1rem
+
 #cert:hover
   svg
     color : $cYellow
     transform: scale(1.2)
     transition: all 500ms
+  #certDescription
+    visibility: visible
+    color: $cYellow
+    text-shadow: $cYellow 0 0 1rem
+    transition: all 500ms
+
 
 .skillContainer
   position : relative
