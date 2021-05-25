@@ -79,20 +79,21 @@
 #footInfo
   text-align : center
 
+
+
 .langContent, .toolContent, .dbContent
   position: absolute
-  top : 475px
-  width : 300px
-  height : 300px
+  top : 0
+  left : 0
+  width : 100%
+  height : 100%
   border-radius : 30px
   visibility : hidden
-  right: calc(30vw + 3px)
   backdrop-filter: blur(3px)
   background-color: rgba($cBackground, 0.9)
   box-shadow : $cBackground 0 0 1rem 1rem, inset $cBackground 0 0 1rem 1rem
 
   h3
-    //@include glowText($cForeground)
     text-shadow: $cGreen 0 0 1rem
     text-align: center
     font-family: $tFont
@@ -114,115 +115,10 @@
       content: '—\A'
       white-space: pre
 
-.toolContent
-  height: 310px
-  top : 830px
-  left: calc(30vw + 5px)
-
-.dbContent
-  top: 1195px
-  height: 280px
-
-#pyContent:target
+.langContent:target, .toolContent:target, .dbContent:target
   visibility: visible
   pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#matlabContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#rustContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#cppContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#cContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#jsContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-//#tsContent:target
-//  visibility: visible
-//  pointer-events: auto
-//  scroll-margin-top: 20rem
-//  opacity: 1
-
-#linuxContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#gitContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#dockerContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#qtContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#hadoopContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#awsContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#gcpContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#sparkContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#hiveContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
-  opacity: 1
-
-#sqlContent:target
-  visibility: visible
-  pointer-events: auto
-  scroll-margin-top: 20rem
+  scroll-margin-top: 30vh
   opacity: 1
 
 #certContent
