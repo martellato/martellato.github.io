@@ -544,6 +544,7 @@ a {
   visibility: visible;
   opacity: 1; }
   #yourlogoContent:target img {
+    display: block;
     width: 100px;
     margin: 0 auto;
     padding-top: 3rem;
@@ -554,6 +555,7 @@ a {
   visibility: visible;
   opacity: 1; }
   #uwaterlooRAContent:target img {
+    display: block;
     width: 300px;
     margin: 0 auto;
     padding-top: 3rem;
@@ -563,6 +565,7 @@ a {
   visibility: visible;
   opacity: 1; }
   #columbiadInternContent:target img {
+    display: block;
     width: 200px;
     margin: 0 auto;
     padding-top: 3rem;
@@ -572,6 +575,7 @@ a {
   visibility: visible;
   opacity: 1; }
   #uwaterlooStuContent:target img {
+    display: block;
     width: 300px;
     margin: 0 auto;
     padding-top: 3rem;
@@ -583,6 +587,7 @@ a {
   visibility: visible;
   opacity: 1; }
   #uiStuContent:target img {
+    display: block;
     width: 100px;
     margin: 0 auto;
     padding-top: 3rem;
